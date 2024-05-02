@@ -1,0 +1,165 @@
+:root {
+    --background: rgb(11, 11, 86);
+    --background-checker: white;
+    --background-definition: rgb(190, 190, 49);
+  }
+  
+  * {
+    color: black;
+    box-sizing: border-box;
+    margin: 0 auto;
+    text-align: center;
+  
+  }
+  
+  html {
+    height: 100vh;
+    width: 100vw;
+      font-family: Times, Georgia;
+  }
+  
+  body {
+    background: var(--background);
+    min-width: 300px;
+    height: inherit;
+    width: inherit;
+    overflow: hidden;
+  }
+  
+  main {
+    width: 80vw;
+    height: inherit;
+  }
+  
+  h1, h2 {
+    color: white;
+  }
+  
+  h1 {
+    font-weight: normal;
+    font-size: 2rem;
+    margin: 10vh auto 3vh auto;
+  }
+  
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 5vh;
+  }
+  
+  p {
+    font-size: 1.4rem;
+    margin: 10px auto;
+  }
+  
+  input {
+    width: 280px;
+    height: 30px;
+    margin-right: 9px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    font-size: 1.4rem;
+  }
+  
+  button {
+    background: black;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: 7px 13px;
+  
+  }
+  
+  i {
+    text-decoration: underline;
+  }
+  
+  .palindrome-checker, .palindrome-definition {
+    width: 450px;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .palindrome-checker {
+    background: var(--background-checker);
+    border: 7px lightblue solid;
+  }
+  
+  .palindrome-definition {
+    background: var(--background-definition);
+    margin: 30px auto 0 auto;
+    font-weight: bold;
+    font-family: sans-serif, Arial ; 
+  }
+  
+  
+  /*MEDIA*/
+  
+  @media screen and (max-width: 700px) {
+  
+    h1 {
+    font-size: 1.5rem;
+    margin: 20px auto;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+  }
+  
+  .palindrome-checker, .palindrome-definition {
+    width: 340px;
+    padding: 10px;
+    margin: 17px auto;
+  }
+  
+  p {
+    font-size: 1.2rem;
+  }
+  
+  input {
+    margin: 7px auto;
+    font-size: 1rem;
+  }
+  }
+  
+  @media screen and (max-width: 400px) {
+  
+    h1 {
+    font-size: 1.1rem;
+    margin: 15px auto;
+  }
+  
+  h2 {
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+  }
+  
+  .palindrome-checker, .palindrome-definition {
+    width: 250px;
+    padding: 10px;
+    margin: 17px auto;
+  }
+  
+  p {
+    font-size: 1.15rem;
+    margin: 5px auto;
+  }
+  
+  input {
+    width: 200px;
+    height: 27px;
+    margin-bottom: 9px;
+    font-size: 1.15rem;
+  }
+  }
+  
+  
+  @media screen and (max-height: 600px) {
+  body {
+    overflow-y: scroll;
+  }
+  }
+  
+  
+  
